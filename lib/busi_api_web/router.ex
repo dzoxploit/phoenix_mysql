@@ -9,6 +9,8 @@ defmodule BusiApiWeb.Router do
     pipe_through :api
   end
 
+  resources "/posts", PostController
+
   # Enables LiveDashboard only for development
   #
   # If you want to use the LiveDashboard in production, you should put
